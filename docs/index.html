@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmEasy: Online Pharamcy & Medical Store in India | 50 Lakhs+ Customers. </title>
+    <link rel="icon"
+      href="https://yt3.ggpht.com/ytc/AKedOLSuSHsPDawY82Xy9OklD3ktnoNxDqq5MhFBdjZ56g=s900-c-k-c0x00ffffff-no-rj"
+      type="x-icon">
+    <style>
+        body {
+        margin: 0;
+        }
+        .navbar {
+        display: flex;
+        height: 150px;
+        flex-direction: column;
+        background-color: #37857e;
+        z-index: 99999;
+        }
+        .navbar-top {
+        display: flex;
+        flex-direction: row;
+        height: 75px;
+        width: 100%;
+        }
+        .navbar-logo {
+        flex-basis: 15%;
+        text-align: center;
+        }
+        .navbar-logo > a > img {
+        width: 100%;
+        padding: 5%;
+        }
+
+        .navbar-search {
+        flex-basis: 70%;
+        }
+
+        .navbar-side {
+        flex-basis: 15%;
+        }
+
+        #search-box {
+        width: 80%;
+        height: 60px;
+        margin: 10px 0 0 5%;
+        justify-self: center;
+        background-color: #fff;
+        border-radius: 5px;
+        }
+
+        #nav-btn {
+        text-align: left;
+        background-color: #2c6c67;
+        border: 1px solid #2c6c67;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        color: #fff;
+        font-weight: 50px;
+        }
+
+        #city {
+        height: 95%;
+        width: 150px !important;
+        color: #37857e;
+        font-size: 1rem;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 1px solid #fff;
+        }
+
+        .navbar-side span {
+        font-size: 0.8rem;
+        }
+
+        #search-box > input {
+        height: 92%;
+        width: 60%;
+        font-size: 0.9rem;
+        padding: 0 10px;
+        border: 1px solid #fff;
+        }
+
+        #search-box > button {
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+        background-color: #f2f2f2;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        }
+
+        .navbar-menu {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+        }
+        .navbar-tab {
+        flex-basis: 60%;
+        }
+        .navbar-button {
+        flex-basis: 35%;
+        }
+        .tab2 {
+            height: 95%;
+            margin: 0px;
+            color: #fff;
+            background-color: #37857e;
+            font-size: 1.2rem;
+            border: none;
+            margin-left: 10%;
+        }
+        .Offers section {
+            height: 220px;
+            width: 98%;
+            justify-content: left;
+            overflow-x: auto;
+        }
+        .Offers section div {
+            height: 160px;
+            display: flex;
+            min-width: 380px;
+            position: relative;
+            text-align: center;
+            left: 0;
+            margin: 15px 5px 0px 20px;
+            transition: 0.5s;
+        }
+        .Offers section div img {
+            width: 40%;
+            height: 40%;
+            margin: 10%;
+            border-radius: 3px;
+        }
+        .Offers #text {
+            text-align: left;
+            display: block;
+            margin-top: 5%;
+        }
+        section {
+            width: 98%;
+            height: 180px;
+            display: flex;
+            justify-content: left;
+            overflow-x: auto;
+        }
+        .L {
+            border: 3px solid #dfe3e6;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        
+        .featured section {
+            height: 310px;
+            width: 98%;
+            justify-content: left;
+            overflow-x: auto;
+        }
+        .featured section div {
+            height: 270px;
+            display: flex;
+            min-width: 170px;
+            position: relative;
+            text-align: center;
+            left: 0;
+            margin: 15px 5px 0px 20px;
+            transition: 0.5s;
+            border-radius: 5%;
+        }
+        .featured section div img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5%;
+        }
+        #plus_member {
+            min-height: 150px;
+            max-height: 280px;
+        }
+        #plus_mem {
+            background-color: #27a9cd69;
+            margin-top: 5%;
+            display: flex;
+            min-height: 94px;
+            border-radius: 6px;
+        }
+        .plus_img img {
+            min-width: 94px;
+            height: 94px;
+            flex: 1;
+            padding: 25px 30px 0;
+        }
+        .plus_text {
+            flex: 3;
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+            margin: auto;
+            padding-top: 5px;
+            padding-right: 25px;
+        }
+        .plus_img2 img {
+            width: 250px;
+            height: 136px;
+            position: absolute;
+            margin: -40px 0 0 0;
+            right: 5px;
+        }
+        #lab_test img {
+            width: 100%;
+            height: 100px;
+            align-self: center;
+        }
+        .deals section {
+            height: 310px;
+            width: 98%;
+            justify-content: left;
+            overflow-x: auto;
+            background-color: #fff2f2;
+        }
+        #demo {
+            border-left: 3px solid #f76b6d;
+            margin-left: 20px;
+            margin-top: 10px;
+            height: 20px;
+        }
+        .deals section div {
+            height: 270px;
+            display: flex;
+            min-width: 270px;
+            position: relative;
+            text-align: center;
+            left: 0;
+            margin: 15px 5px 0px 20px;
+            transition: 0.5s;
+            border-radius: 5%;
+        }
+        .deals section div img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5%;
+        }
+        #delivery {
+            display: flex;
+            height: 360px;
+            padding-right: 10px;
+        }
+        #delivery a {
+            text-decoration: none;
+            color: black;
+        }
+        #delivery div {
+            width: 25%;
+            margin: 25px;
+        }
+        #delivery img {
+            height: 110px;
+        }
+        
+    </style>
+  </head>
+
+  <body>
+    <div id="phrameasynavbar">
+        <header id="nav-head">
+          <div class="navbar">
+            <div class="navbar-top">
+              <div class="navbar-logo">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="Pharmeasy logo" />
+              </div>
+              <div class="navbar-search">
+                <div id="search-box">
+                  <select name="pincode" id="city">
+                    <option value="select-city">Select Pincode</option>
+                  </select>
+                  <input class="search-input" type="text" placeholder="Search for Medicine / Healthcare Product @18% off"
+                    style="border-left: 1px solid grey;height: 20px;" />
+                  <i class="fas fa-search" style="color: grey;padding-left:10%;font-size: 22px;"></i>
+                </div>
+              </div>
+            </div>
+              <div class="navbar-button">
+                <div id="btn-nav">
+                 <a href="page02.html"><button class="tab2">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="">
+                  Login/ Signup</button></a>
+                    <a href="/html/cart.html" style="text-decoration: none; color: white;"><img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt="">
+                    Cart</button></a>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <img class="d-block w-100"
+            src="https://cms-contents.pharmeasy.in/banner/ff62f53c2ba-GRAND25DWEB.jpg?dim=1440x0&dpr=1&q=100"
+            alt="First slide"
+            width="1300px"
+            height="200px">
+    <div id="order_menu">
+    </div>
+    <div id="plus_member">
+      <a href="">
+        <div id="plus_mem">
+          <div class="plus_img">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png" alt="plus-logo">
+          </div>
+          <div class="plus_text">
+            Save flat
+            <strong>5%</strong>
+            extra on medicines & enjoy
+            <strong>FREE</strong>
+            <br>
+            delivery with PLUS membership
+          </div>
+          <div class="plus_img2">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png" alt="">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div id="offers_mid">
+      <main class="Offers">
+        <h3 style="display: inline;margin-left: 15px;">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/67890676.svg" alt="">
+          Offers Just For You
+        </h3>
+        <a href="" style="margin-left: 55%;text-decoration: none;color: seagreen;font-size: 22px;">See All Offers</a>
+        <section>
+          <div class="L">
+            <img src="https://cms-contents.pharmeasy.in/offer/f8bf7f78e45-25100.jpg?dim=60x0&dpr=1.5&q=100" alt="">
+            <div id="text">
+              <p>Flat 25% off + up to <br> Rs.1000 cash</p>
+              <p>Code:
+                <span>
+                  GRAND25
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="L">
+            <img src="https://cms-contents.pharmeasy.in/offer/823d606af82-sarva_logo.jpg?dim=60x0&dpr=1.5&q=100" alt="">
+            <div id="text">
+              <p>Flat 25% off + up to <br> Rs.1000 cash</p>
+              <p>Code:
+                <span>
+                  GRAND25
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="L">
+            <img src="https://cms-contents.pharmeasy.in/offer/df070d160cc-Logo_PE_PE_PE.png?dim=60x0&dpr=1.5&q=100"
+              alt="">
+            <div id="text">
+              <p>Flat 25% off + up to <br> Rs.1000 cash</p>
+              <p>Code:
+                <span>
+                  GRAND25
+                </span>
+              </p>
+            </div>
+          </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="featured_brand">
+      <main class="featured">
+        <h3 style="display: inline;margin-left: 15px;">Featured Brands</h3>
+        <section>
+          <div class="D">
+            <img
+              src="https://cms-contents.pharmeasy.in/carousel_item/5c4c1bd1cc1-Featured-brand_web.jpg?dim=146x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+          <div class="D">
+            <img
+              src="https://cms-contents.pharmeasy.in/carousel_item/9d406684215-Featured-brand_web_Plum.jpg?dim=146x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+          <div class="D">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/0845572266f-Everherb.jpg?dim=146x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+          <div class="D">
+            <img
+              src="https://cms-contents.pharmeasy.in/carousel_item/6beabc4b6ed-web_Accusure.jpg?dim=146x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+          <div class="D">
+            <img
+              src="https://cms-contents.pharmeasy.in/carousel_item/f8493a13be2-web_Pigeon.jpg?dim=146x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+          <div class="D">
+            <img src="https://cms-contents.pharmeasy.in/carousel_item/d5f9240e29a-SUGARFREE.png?dim=146x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="lab_test">
+      <a href="">
+        <img src="https://cdn01.pharmeasy.in/dam/banner/banner/c5ae1494075-DesktopTrust.png?dim=1024x100&dpr=1.5&q=100"
+          alt="">
+      </a>
+    </div>
+    <div id="deals_section">
+      <main class="deals">
+        <h3 style="display: inline;margin-left: 15px;">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/cc9b301d.svg" alt="" style="margin-right: 20px;">
+          Deals of the Day
+        </h3>
+        <a href="" style="margin-left: 55%;text-decoration: none;color: seagreen;font-size: 22px;">View All</a>
+        <section>
+          <div class="M">
+            <img
+              src="https://cdn01.pharmeasy.in/dam/products_otc/A66839/optimum-nutrition-on-gold-standard-100-whey-protein-powder-1lb-454gdouble-rich-chocolate-2-1641791292.jpg?dim=224x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+          <div class="M">
+            <img
+              src="https://cdn01.pharmeasy.in/dam/products_otc/D17388/dr-morepen-natural-pure-shilajit-resin-ayurvedic-energy-booster-stamina-enhancer-15g-2-1641792829.jpg?dim=224x0&dpr=1.5&q=100"
+              alt="cdn link">
+          </div>
+          <div class="M">
+            <img
+              src="https://cdn01.pharmeasy.in/dam/products_otc/183150/volini-pain-relief-gel-30-gm-1-1643883494.jpg?dim=224x0&dpr=1.5&q=100"
+              alt="">
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="delivery">
+      <div>
+        <a href="">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg" alt="">
+          <p>
+            <h1>25 Million</h1>
+            <h4>Registered Users as <br> of Jun 30, 2021</h4>
+          </p>
+        </a>
+
+      </div>
+      <div>
+        <a href="">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg" alt="">
+          <p>
+            <h1>25 Million</h1>
+            <h4>PharmEasy Orders as of FY21</h4>
+          </p>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg" alt="">
+          <p>
+            <h1>50K+</h1>
+            <h4>SKUs sold in Q1FY22</h4>
+          </p>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/f2d557d3.svg" alt="">
+          <p>
+            <h1>25 Million</h1>
+            <h4>Pin-Codes Serviced for the month of June <br> 2021</h4>
+          </p>
+        </a>
+      </div>
+    </div>
+    
